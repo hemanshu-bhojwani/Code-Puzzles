@@ -1,5 +1,5 @@
-#TwoSum
-#Solution using two for-loops. Time complexity O(n^2)
+#Leetcode 1. Two Sum
+#Time complexity O(n^2)
 
 def twoSum(nums, target):
         for i in range(len(nums)):
