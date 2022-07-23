@@ -12,3 +12,17 @@ class Solution:
                 if sum(nums[i:j]) > max_sum:
                     max_sum = sum(nums[i:j])
         return max_sum
+
+# O(n) Solution
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        sum = nums[0]
+        res = nums[0]
+        
+        for i in range(1,len(nums)):
+
+            sum = max(nums[i], sum+nums[i])
+        
+            if sum > res:
+                res = sum
+        return res
